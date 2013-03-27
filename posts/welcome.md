@@ -37,5 +37,6 @@ and information that already exists in various departments and schools.
 
 
 In one sense we're a grass-roots open-data movement.
-But that's a means to an end - we want to build tools, and make our own lives
-a little bit easier. So wish us luck.
+We want the information, but we know that getting it all at once.
+So we'll build all the little things we can, until one day we've built
+something big. Fingers crossed.
