@@ -20,6 +20,14 @@ ghc --make site.hs
 
 You can test the site locally by running `./site preview`.
 
+To upload the site, you need to copy `post-commit` into your local Git hooks
+(because Git doesn't keep track of them) and mark it executable:
+
+```bash
+cp post-commit .git/hooks/post-commit
+chmod +x .git/hooks/post-commit
+```
+
 There is a [tutorial about templates on the Hakyll site][templating].
 
 
