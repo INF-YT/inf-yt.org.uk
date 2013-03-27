@@ -45,10 +45,7 @@ title: MY AWESOME POST ON DATA FREEDOM!!!
 description: So yeah, we need more of that stuff, right?
 ---
 
-MY AWESOME POST ON DATA FREEDOM!!!
-==================================
-
-(...)
+(... post content ...)
 ```
 
 After you've written a post, you can `git push` back up to GitHub, and
