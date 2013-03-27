@@ -11,7 +11,7 @@ Haskell extra-ordinaire.
 Jamie Mac ([jgmsoftware][])
 ----------------------------
 
-Guy who actually knew what a 'Young-Team' is.
+Guy who actually knows what a 'Young-Team' is.
 
 
 Connor Stuart ([conkerbot][])

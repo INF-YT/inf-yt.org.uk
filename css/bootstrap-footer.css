@@ -1,0 +1,30 @@
+/* Taken from Bootstrap's own custom footer example */
+
+html,body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Set the fixed height of the footer here */
+.push {
+    min-height: 100px;
+}
+.footer {
+    height: 70px;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+}
+.footer p {
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    .footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
