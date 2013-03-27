@@ -1,6 +1,7 @@
 ---
 title: Welcome to the INF-YT.
 description: The Informatics Young Team has landed!
+published: 2013-03-27
 ---
 
 [Hi everybody][dr. nick]! We're the Informatics Young Team (or [INF-YT] for
