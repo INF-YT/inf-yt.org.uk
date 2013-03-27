@@ -1,0 +1,23 @@
+# Git post-commit hook, for server admins
+# to automatically push up Hakyll changes to the server
+
+echo "*********************************************"
+echo "Beginning post-commit blog upload."
+## recompile the binary, just in case
+echo "Recompiling site.hs (GHC and Hakyll must be installed)..."
+ghc --make site.hs
+echo "Rebuilding site..."
+./site rebuild
+echo "Uploading site..."
+scp -rC ./_site/ inf-yt:/var/www/blog
+
+echo "Site upload complete, check it out at http://inf-yt.org.uk/blog"
+echo "*********************************************"
+
+## inf-yt must be configured in ~/.ssh/config as below:
+# Host inf-yt
+#     HostName        inf-yt.org.uk
+#     User            ubuntu
+#     IdentityFile    ~/.ssh/LAMP.pem
+#     IdentitiesOnly  yes
+## where LAMP.pem is the private RSA key for ubuntu@inf-yt.org.uk
