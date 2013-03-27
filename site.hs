@@ -28,13 +28,15 @@ main = hakyll $ do
         compile compressCssCompiler
 
     match (fromList ["mission-statement.md", "people.md"]) $ do
-        route   $ setExtension "html"
+        --route   $ setExtension "html"
+        route   $ setExtension ""
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
     match "posts/*" $ do
-        route $ setExtension "html"
+        --route   $ setExtension "html"
+        route   $ setExtension ""
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= saveSnapshot "content"
