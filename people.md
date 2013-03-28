@@ -17,7 +17,13 @@ Guy who actually knows what a 'Young-Team' is.
 Connor Stuart ([conkerbot][])
 -----------------------------
 
-MesphistoPHP.
+MephistoPHP.
+
+
+Nantas Nardelli([edran][])
+--------------------------
+
+Edinburgh's modern Cicero.
 
 
 Ben Jeffrey ([jeffbr13][])
@@ -30,5 +36,6 @@ Short-sighted visionary.
 
 [jeffbr13]: https://github.com/jeffbr13
 [jgmsoftware]: https://github.com/jgmsoftware
-[conkerbot]: https://github.com/conkerbot
+[conkerbot]: https://twitter.com/conkerbot
 [wishf]: https://github.com/wishf
+[edran]: https://github.com/edran
