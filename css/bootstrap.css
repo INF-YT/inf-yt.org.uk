@@ -619,6 +619,7 @@ a:focus {
   margin-right: auto;
   margin-left: auto;
   *zoom: 1;
+  margin-bottom: 24px;
 }
 
 .container:before,
@@ -636,6 +637,7 @@ a:focus {
   padding-right: 20px;
   padding-left: 20px;
   *zoom: 1;
+  margin-bottom: 24px;
 }
 
 .container-fluid:before,
@@ -650,7 +652,7 @@ a:focus {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 18px;
 }
 
 .lead {
@@ -813,7 +815,7 @@ h4 small {
 ul,
 ol {
   padding: 0;
-  margin: 0 0 10px 25px;
+  margin: 0 0 24px 25px;
 }
 
 ul ul,
