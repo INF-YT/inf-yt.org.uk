@@ -35,34 +35,25 @@ Adding posts
 ------------
 
 Posts are written in [Pandoc markdown][], and are placed in `posts/`
-with a filename of `yyyy-mm-dd-post-slug.md`, where `yyyy-mm-dd` is the
-date that you wrote the post in [ISO 8601][] format, and
-the `post-slug` is ideally a human-shareable descriptive URL for your
-post. The title of your post piped through `tr` as one possible option:
+with a filename of `post-slug.md`, where `post-slug` is
+a human-shareable URL.
 
-```bash
-echo "MY AWESOME POST ON DATA FREEDOM!!!" | tr '[:upper:]' '[:lower:]' | tr '[:blank:]' '-' | tr --delete --complement '[:alnum:]'
-```
-
-Each post is preceded by a 'metadata block', which *must* have both
-a `title` and a `description` attribute. You must provide
-a `published` attribute too, if you want to have a simpler filename,
-à la `post-slug.md`:
+Each post is preceded by a 'metadata block', where you *must* provide
+a `title`, a `description`, an `author`, and a `date` attribute.
 
 ```markdown
 ---
 title: MY AWESOME POST ON DATA FREEDOM!!!
 description: So yeah, we need more of that stuff, right?
 published: 2013-03-27
+author: me
 ---
 
 (... post content ...)
 ```
 
-BONUS KNOWLEDGE: You don't actually need a date in the
-
 After you've written a post, you can `git push` back up to GitHub, and
-then `git push production` which sends it out onto [the WWW][inf-yt blog]!
+then `git push production` which sends it out onto [the WWW][inf-yt]!
 
 
 <!-- references -->
@@ -70,5 +61,4 @@ then `git push production` which sends it out onto [the WWW][inf-yt blog]!
 [Hakyll]: http://jaspervdj.be/hakyll/
 [templating]: http://jaspervdj.be/hakyll/tutorials/04-compilers.html#templates
 [Pandoc markdown]: http://www.johnmacfarlane.net/pandoc/README.html#pandocs-markdown
-[ISO 8601]: https://en.wikipedia.org/wiki/ISO_8601
-[inf-yt blog]: http://inf-yt.org.uk/blog
+[inf-yt]: http://inf-yt.org.uk/
