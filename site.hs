@@ -19,7 +19,7 @@ atomFeedConfiguration = FeedConfiguration
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-    match "images/*" $ do
+    match "img/*" $ do
         route   idRoute
         compile copyFileCompiler
 
@@ -48,7 +48,7 @@ main = hakyll $ do
         compile $ do
             let archiveCtx =
                     field "posts" (\_ -> postList recentFirst) `mappend`
-                    constField "title" "Archives"              `mappend`
+                    constField "title" "posts archive"         `mappend`
                     defaultContext
 
             makeItem ""

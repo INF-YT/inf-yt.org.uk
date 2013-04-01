@@ -53,7 +53,7 @@ something big. Fingers crossed.
 [Best Data Mashup]: http://data.inf.ed.ac.uk/ilwhack/
 [CompSoc]: http://www.comp-soc.com/
 [myed 2."oh"]: https://github.com/INF-YT/don
-[#winning]: /images/2013-02-after-ilwhack.jpg
+[#winning]: /img/2013-02-after-ilwhack.jpg
 [mission-statement]: /mission-statement
 [inf-ytimetab]: https://github.com/INF-YT/INF-YTimetab
 [aliss]: http://www.aliss.org/
