@@ -1,11 +1,11 @@
 ---
 title: Mission Statement of the INF-YT
-description: The mission statement of the Informatics Young-Team
+description: The mission statement of the INF-YT Special Interest Group
 ---
 
 This document records the current aims and status of the INF-YT.
 
-We at the [Informatics Young-Team](http://inf-yt.org.uk) want two things:
+We at the [INF-YT](http://inf-yt.org.uk) want two things:
 
 1. an API providing each student with access to all of their data, held
     by the university

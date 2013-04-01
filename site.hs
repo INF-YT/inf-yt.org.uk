@@ -9,8 +9,8 @@ import           Hakyll
 atomFeedConfiguration :: FeedConfiguration
 atomFeedConfiguration = FeedConfiguration
     { feedTitle       = "INF-YT"
-    , feedDescription = "A chronicle of the Informatics Young-Team's exploits & endeavours"
-    , feedAuthorName  = "the Informatics Young Team"
+    , feedDescription = "A chronicle of the INF-YT's exploits & endeavours"
+    , feedAuthorName  = "the INF-YT"
     , feedAuthorEmail = "mail@benjeffrey.net"
     , feedRoot        = "http//inf-yt.org.uk/blog"
     }

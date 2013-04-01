@@ -1,7 +1,7 @@
 blog
 ====
 
-The Informatics Young-Team blog.
+The INF-YT site.
 
 
 Setting up locally
