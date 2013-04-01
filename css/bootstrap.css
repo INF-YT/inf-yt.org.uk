@@ -226,8 +226,7 @@ textarea {
 body {
   margin: 0;
   font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  line-height: 1.6;
   color: #555555;
   background-color: #ffffff;
 }
@@ -4360,6 +4359,7 @@ input[type="submit"].btn.btn-mini {
   *z-index: 2;
   margin-bottom: 20px;
   overflow: visible;
+  line-height: 20px;
 }
 
 .navbar-inner {
