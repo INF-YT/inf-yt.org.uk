@@ -1,17 +1,17 @@
 # Git post-commit hook, for server admins
 # to automatically push up Hakyll changes to the server
 
-echo "*****************************************************************************"
-echo "Beginning post-commit blog upload.\n"
+echo "********************************************************************************"
+echo "Beginning post-commit blog upload."
 ## recompile the binary, just in case
 echo "\nRecompiling site.hs (GHC and Hakyll must be installed)..."
 ghc --make site.hs
 echo "\nRebuilding site..."
 ./site rebuild
 echo "\nUploading site..."
-scp -rC ./_site/* inf-yt:/var/www/blog/
-echo "\nSite upload complete! Check it out at http://inf-yt.org.uk/blog"
-echo "*****************************************************************************"
+scp -rC ./_site/* inf-yt:/var/www/
+echo "\nSite upload complete! Check it out at http://inf-yt.org.uk/"
+echo "********************************************************************************"
 
 
 ## inf-yt is an SSH host configured in ~/.ssh/config as below:
