@@ -20,7 +20,7 @@ Connor Stuart ([conkerbot][])
 MephistoPHP.
 
 
-Nantas Nardelli([edran][])
+Nantas Nardelli ([edran][])
 --------------------------
 
 Edinburgh's modern Cicero.

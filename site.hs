@@ -48,7 +48,7 @@ main = hakyll $ do
         compile $ do
             let archiveCtx =
                     field "posts" (\_ -> postList recentFirst) `mappend`
-                    constField "title" "posts archive"         `mappend`
+                    constField "title" "Posts archive"         `mappend`
                     defaultContext
 
             makeItem ""
