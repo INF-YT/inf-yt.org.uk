@@ -18,11 +18,6 @@ html,body {
     height: 120px; /* set the fixed height of the footer here, too */
 }
 
-footer {
-    background-color: rgb(238, 238, 238);
-    text-align: center;
-}
-
 
 /* The HTML must be arranged in the following way:
 <body>
@@ -50,12 +45,10 @@ footer {
 /* Custom styles *******************************************************/
 
 /* WARNING: don't add any more margins to content inside the footer */
-.footer {
-    background-color: rgb(238, 238, 238);
-}
-
-.footer p {
+footer {
     padding-top: 10px;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
