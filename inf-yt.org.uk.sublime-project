@@ -1,0 +1,22 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/jeffbr/code/inf-yt/inf-yt.org.uk"
+		}
+	],
+    "build_systems":
+    [
+        {
+            "name": "Hakyll static site",
+            "cmd": ["./site", "build"],
+            "working_dir": "$project_path"
+        },
+        {
+            "name": "Hakyll executable",
+            "cmd": ["ghc", "--make", "site.hs"],
+            "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+            "working_dir": "$project_path"
+        }
+    ]
+}
