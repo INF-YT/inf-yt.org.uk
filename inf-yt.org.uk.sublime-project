@@ -1,22 +1,37 @@
 {
-	"folders":
-	[
-		{
-			"path": "/home/jeffbr/code/inf-yt/inf-yt.org.uk"
-		}
-	],
-    "build_systems":
-    [
-        {
-            "name": "Hakyll static site",
-            "cmd": ["./site", "build"],
-            "working_dir": "$project_path"
-        },
-        {
-            "name": "Hakyll executable",
-            "cmd": ["ghc", "--make", "site.hs"],
-            "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
-            "working_dir": "$project_path"
-        }
-    ]
+ "folders": [
+  {
+   "folder_exclude_patterns": [
+    "_site",
+    "_cache"
+   ],
+   "path": "/home/jeffbr/code/inf-yt/inf-yt.org.uk",
+   "file_exclude_patterns": [
+    ".gitignore",
+    "inf-yt.org.uk.sublime-workspace",
+    "site",
+    "site.hi"
+   ]
+  }
+ ],
+ "build_systems": [
+  {
+   "working_dir": "$project_path",
+   "cmd": [
+    "./site",
+    "build"
+   ],
+   "name": "Hakyll static site"
+  },
+  {
+   "working_dir": "$project_path",
+   "cmd": [
+    "ghc",
+    "--make",
+    "site.hs"
+   ],
+   "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+   "name": "Hakyll executable"
+  }
+ ]
 }
