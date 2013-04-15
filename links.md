@@ -1,5 +1,5 @@
 ---
-title: Project Index
+title: Links
 ---
 
 INF-YT's Projects:
@@ -9,10 +9,6 @@ INF-YT's Projects:
 
 * [INF-YTimetab](http://timetab.inf-yt.org.uk)
 * [MyED 2."oh"](http://inf-yt.org.uk/ilw)
-
-### Ongoing
-
-* Grade-comparison Tool for Classes
 
 
 Projects from other University of Edinburgh students:
