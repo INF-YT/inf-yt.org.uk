@@ -46,9 +46,12 @@ html,body {
 
 /* WARNING: don't add any more margins to content inside the footer */
 footer {
-    padding-top: 10px;
     background-color: rgb(238, 238, 238);
     text-align: center;
+}
+
+footer p {
+    padding-top: 10px;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
