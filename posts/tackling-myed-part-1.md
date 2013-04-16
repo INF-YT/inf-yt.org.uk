@@ -50,12 +50,13 @@ nature some services had in terms of UI/UX. The Timetabling system
 Timetab is a very good example of this, but other than from a mostly-
 unified colour scheme University systems were highly disperate, and
 almost all lacking, in terms of user experience. So this set us two
-tasks; build Timetab from scratch (√) and use modern design principles.
-And by modern design principles, I mean slather Bootcamp on everything.
+tasks; build Timetab from scratch (✓) and use modern design principles.
+And by modern design principles, I mean slather [Twitter Bootstrap][] on
+*everything*.
 
 Oh, hey, I've just given myself a graceful way to transition to talking
 about implementation and technical issues without awkwardly saying that's
-what I'm doing (oops). But while we had quickly decided that Bootcamp
+what I'm doing (oops). But while we had quickly decided that Bootstrap
 (that we later skinned to match the University's colour scheme) was the
 way we wanted to go on UI, we had very seperate ways of going about
 things based on our previous programming experiences. This created many
@@ -67,7 +68,7 @@ time to be able to implement the project, so we went with a simpler plan.
 I would be responsible for building the core MyED website &
 authentication system. I did this with a simple PHP/MySQL setup due to my
 experience with these technologies. To structure the project, and enable
-quicker PHP development, I settled on using the CodeIgniter framework.
+quicker PHP development, I settled on using the [CodeIgniter][] framework.
 This enabled me to rapidly develop the core, and by the end of day 1 I
 had the authentication system nailed down and a framework of the website.
 
@@ -82,13 +83,15 @@ of these troubles, I recommend a gander at [projects.ed.ac.uk][]).
 So that, my friends, is a look at the internal decision making of why we
 decided to tackle MyED, along with a lot of buzzwords and some details of
 how we built it. I would write more, but at this point you've already
-left. So, I'll leave it until next week (-ish) to talk about what features
-we actually built into our project.
+left. So, I'll leave it until next week (-ish) to talk about what
+features we actually built into our project.
 
-[Byzies].
+[Byzies][].
 
 <!--footnotes and links-->
 
 [EASE]: https://www.ease.ed.ac.uk/
 [Byzies]: http://www.youtube.com/watch?v=5T75MhFcKM4
 [projects.ed.ac.uk]: http://www.projects.ed.ac.uk/
+[Twitter Bootstrap]: http://twitter.github.io/bootstrap/
+[CodeIgniter]: http://codeigniter.com/
