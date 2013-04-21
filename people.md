@@ -23,7 +23,7 @@ MephistoPHP.
 Nantas Nardelli ([edran][])
 --------------------------
 
-Edinburgh's modern Cicero.
+Italian Stallion, fighting our corner in the arena of student politics.
 
 
 Ben Jeffrey ([jeffbr13][])
