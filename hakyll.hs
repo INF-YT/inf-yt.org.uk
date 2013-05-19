@@ -2,23 +2,28 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid (mappend)
 import           Hakyll
-
-
------------------------------------------------------- Atom feed configuration
-
-atomFeedConfiguration :: FeedConfiguration
-atomFeedConfiguration = FeedConfiguration
-    { feedTitle       = "INF-YT"
-    , feedDescription = "A chronicle of the INF-YT's exploits & endeavours"
-    , feedAuthorName  = "the INF-YT"
-    , feedAuthorEmail = "mail@benjeffrey.net"
-    , feedRoot        = "http//inf-yt.org.uk/blog"
-    }
+import qualified Text.Pandoc.Options as Pandoc.Options
 
 
 --------------------------------------------------------------------------------
+config :: Configuration
+config = defaultConfiguration
+        {   deployCommand = "rsync -avz -e ssh ./_site/ inf-yt:/var/www/ && rsync -avz -e ssh ./nginx parsley:/etc/nginx/sites_enabled/benjeffrey.com"}
+
+pandocWriterOptions :: Pandoc.Options.WriterOptions
+pandocWriterOptions = defaultHakyllWriterOptions
+                        { Pandoc.Options.writerHtml5 = True
+                        , Pandoc.Options.writerHtmlQTags = True
+                        --, Pandoc.Options.writerNumberSections = True
+                        --, Pandoc.Options.writerNumberOffset = [1]
+                        , Pandoc.Options.writerSectionDivs = True
+                        , Pandoc.Options.writerTableOfContents = True
+                    }
+
+--------------------------------------------------------------------------------
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
+
     match "img/*" $ do
         route   idRoute
         compile copyFileCompiler
@@ -33,18 +38,16 @@ main = hakyll $ do
         compile compressCssCompiler
 
     match (fromList ["mission-statement.md", "people.md", "links.md"]) $ do
-        --route   $ setExtension "html"
         route   $ setExtension ""
-        compile $ pandocCompiler
+        compile $ pandocCompilerWith defaultHakyllReaderOptions pandocWriterOptions
+            >>= loadAndApplyTemplate "templates/static.html" defaultContext
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
     match "posts/*" $ do
-        --route   $ setExtension "html"
         route   $ setExtension ""
-        compile $ pandocCompiler
+        compile $ pandocCompilerWith defaultHakyllReaderOptions pandocWriterOptions
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
-            >>= saveSnapshot "content"
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
@@ -53,7 +56,7 @@ main = hakyll $ do
         compile $ do
             let archiveCtx =
                     field "posts" (\_ -> postList recentFirst) `mappend`
-                    constField "title" "Post archive"         `mappend`
+                    constField "title" "Posts Archive"         `mappend`
                     defaultContext
 
             makeItem ""
@@ -75,14 +78,6 @@ main = hakyll $ do
 
     match "templates/*" $ compile templateCompiler
 
-
-    create ["atom.xml"] $ do
-        route idRoute
-        compile $ do
-            let feedCtx = postCtx `mappend` bodyField "description"
-            posts <- fmap (take 10) . recentFirst =<<
-                loadAllSnapshots "posts/*" "content"
-            renderAtom atomFeedConfiguration feedCtx posts
 
 --------------------------------------------------------------------------------
 postCtx :: Context String
