@@ -56,7 +56,7 @@ Hakyll is now set to use `rsync` to copy its files up to the server with:
 
 The command it uses is `rsync -avz -e ssh ./_site/* inf-yt:/var/www/`
 which assumes you have an entry for the `inf-yt` server in `~/.ssh/config`
-configure like this:
+configured like this:
 
 ```
 Host inf-yt
@@ -65,7 +65,7 @@ Host inf-yt
     IdentityFile    ~/.ssh/LAMP.pem
     IdentitiesOnly  yes
 ```
-where `~/.ssh/LAMP.pem` is the private RSA key for  ubuntu@inf-yt.org.uk`.
+where `~/.ssh/LAMP.pem` is the private RSA key for `ubuntu@inf-yt.org.uk`.
 
 <!-- references -->
 
