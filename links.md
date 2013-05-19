@@ -1,5 +1,6 @@
 ---
 title: Links
+description: People, pages, and organizations that we like.
 ---
 
 INF-YT's Projects:

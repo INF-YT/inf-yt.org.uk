@@ -1,5 +1,6 @@
 ---
 title: People
+description: INF-YT's members
 ---
 
 Matthew Summers ([wishf][])

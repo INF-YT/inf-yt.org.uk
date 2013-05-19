@@ -1,37 +1,33 @@
 {
- "folders": [
-  {
-   "folder_exclude_patterns": [
-    "_site",
-    "_cache"
-   ],
-   "path": "/home/jeffbr/code/inf-yt/inf-yt.org.uk",
-   "file_exclude_patterns": [
-    ".gitignore",
-    "inf-yt.org.uk.sublime-workspace",
-    "site",
-    "site.hi"
-   ]
-  }
- ],
- "build_systems": [
-  {
-   "working_dir": "$project_path",
-   "cmd": [
-    "./site",
-    "build"
-   ],
-   "name": "Hakyll static site"
-  },
-  {
-   "working_dir": "$project_path",
-   "cmd": [
-    "ghc",
-    "--make",
-    "site.hs"
-   ],
-   "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
-   "name": "Hakyll executable"
-  }
- ]
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"./hakyll",
+				"build"
+			],
+			"name": "Hakyll static site",
+			"working_dir": "$project_path"
+		}
+	],
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"benjeffrey.com.sublime-workspace",
+				"hakyll",
+				"*.hi"
+			],
+			"folder_exclude_patterns":
+			[
+				"_cache",
+				".sass-cache",
+				"css",
+				"_site"
+			],
+			"path": "/home/jeffbr/code/inf-yt/inf-yt.org.uk"
+		}
+	]
 }

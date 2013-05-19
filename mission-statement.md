@@ -1,16 +1,13 @@
 ---
-title: Mission Statement of the INF-YT
-description: The mission statement of the INF-YT Special Interest Group
+title: Mission Statement
+description: INF-YT's aims and objectives
 ---
 
-This document records the current aims and status of the INF-YT.
+We at the [INF-YT](http://inf-yt.org.uk) want:
 
-We at the [INF-YT](http://inf-yt.org.uk) want two things:
-
-1. an API providing each student with access to all of their data, held
+1. an API providing each student with access to all their data held
     by the university
-2. to implement the API in usable student services, demonstrating the
-    power of having access to your data through a programmatic interface
+2. access to open datasets from the university
 
 
 In order to provide as much value as possible, both to the university
