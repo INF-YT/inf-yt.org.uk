@@ -3,43 +3,53 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>INF-YT • $title$</title>
+    <title>INF-YT / $title$</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
     <link rel="stylesheet" href="/css/bootstrap-responsive.css" />
     <link rel="stylesheet" href="/css/bootstrap-footer.css" />
+    <style type="text/css">
+        h1 > a, h2 > a, h3 > a, h4 > a, h5 > a {
+            color: #25476c;
+        }
+        h1 {
+            font-size: 6em;
+            line-height: 1;
+        }
+        .content p, .content li {
+            max-width: 35em;
+            text-align: justify;
+        }
+        .content li {
+            list-style-type: square;
+        }
+        .row, .row-fluid {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+    </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <nav id="header" class="navbar">
-            <div class="navbar-inner">
-                <a class="brand" href="/">⚒ INF-YT</a>
-                <ul class="nav" id="navigation">
-                    <li><a href="/archive">post archive</a></li>
-                    <li><a href="/mission-statement">mission-statement</a></li>
-                    <li><a href="/people">people</a></li>
-                    <li><a href="/links">links</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="container-fluid">
-            <div id="content" class="row">
-                <div class="span5">
-                  <h1 style="font-size: 72px; font-weight: bold; line-height: 1; text-align:center">$title$</h1>
+        <div class="container">
+            <nav id="header" class="navbar">
+                <div class="navbar-inner">
+                    <a class="brand" href="/">⚒ INF-YT</a>
+                    <ul class="nav">
+                        <li><a href="/archive">posts archive</a></li>
+                        <li><a href="/mission-statement">mission-statement</a></li>
+                        <li><a href="/people">people</a></li>
+                        <li><a href="/links">links</a></li>
+                    </ul>
                 </div>
+            </nav>
 
-                <div class="span6 offset1">
-                    $body$
-                </div>
-            </div>
+            $body$
         </div>
-
         <div class="push"></div>
-
     </div>
 
     <footer class="footer muted">
