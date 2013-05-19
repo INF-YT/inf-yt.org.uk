@@ -8,7 +8,7 @@ import qualified Text.Pandoc.Options as Pandoc.Options
 --------------------------------------------------------------------------------
 config :: Configuration
 config = defaultConfiguration
-        {   deployCommand = "rsync -avz -e ssh ./_site/ inf-yt:/var/www/ && rsync -avz -e ssh ./nginx parsley:/etc/nginx/sites_enabled/benjeffrey.com"}
+        {   deployCommand = "rsync -avz -e ssh ./_site/* inf-yt:/var/www/"}
 
 pandocWriterOptions :: Pandoc.Options.WriterOptions
 pandocWriterOptions = defaultHakyllWriterOptions
